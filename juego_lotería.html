@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE LOTERÍA</h1>
+
+
+<script>
+
+function saltarlinea(){
+
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+
+}
+
+function imprimir(frase){
+
+	document.write (frase)
+
+	saltarlinea();
+
+}
+
+
+var numeroPensado = Math.round(Math.random ()*100);
+
+var numeroLanzado = parseInt(prompt("Ingrese un número entre 0 y 100"));
+
+
+
+
+ if(numeroPensado == numeroLanzado){
+
+ 	imprimir("Usted ha sido el ganador del sorteo");
+
+  }
+
+else{
+
+
+  if(numeroPensado < numeroLanzado){
+
+  	imprimir("Usted erró, el número ganador era menor.")
+
+  	  
+  	}
+
+ else{
+
+ 	imprimir("Usted erró, el número ganador era mayor.")
+ }
+
+}
+
+</script>
